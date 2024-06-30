@@ -1,0 +1,76 @@
+## Week 2: Finding and working with data
+
+### Identifying datasets
+
+Data Scientists often have to choose between using existing datasets or
+collecting their own data. This week we will look at how to find and evaluate
+existing datasets.
+
+## Evaluating Datasets
+
+You may have come across the "PROMPT" criteria for evaluating texts. The PROMPT
+criteria are a set of questions that can be used to evaluate the quality of a
+text. The PROMPT criteria are:
+
+- **Presentation**
+  - Is the information presented clearly?
+  - Is the language appropriate?
+  - Is it succinct?
+  - Can I understand it?
+- **Relevance**
+  - Does this information match my needs right now?
+  - What is it mostly about?
+- **Objectivity**
+  - Is there bias in what you are reading?
+  - Might the author/s have any hidden agendas? Have they been selective with
+    their evidence?
+  - Is the language used emotive?
+  - Are opinions expressed?
+  - Are there sponsors?
+  - What are they selling? A particular product, a corporate view?
+  - Is there contribution from different viewpoints by diverse authors to
+    provide a balanced overview?
+  - Are you selecting sources which confirm your own biases or seeking a broad
+    range of perspectives on an issue?
+- **Method**
+  - Is it clear how any research was carried out?
+  - How was data gathered?
+  - If statistical data is presented, what is this based on?
+  - Do researchers address any differences in outcomes between groups (e.g.,
+    ethnic/racial groups)?
+  - Were the methods appropriate, rigorous, etc.?
+- **Provenance**
+  - Is it clear who produced this information?
+  - Where does it come from? Whose opinions are these?
+  - Do you trust this source of information?
+  - Are there references/citations that lead to further reading, and are they
+    trustworthy sources?
+- **Timeliness**
+  - When was it produced or published? Do any of the sources reinforce
+    stereotypes or represent other outdated views?
+  - Is it current?
+  - Has the climate/situation changed since this information was made available?
+  - Is it still up to date?
+
+### Extraction
+
+### Cleaning
+
+> Cleaning the data is often the most taxing part of  
+> data science, and is frequently 80% of the work.
+ 
+#### Data types
+
+#### Missing data
+
+#### Outliers
+
+#### Duplicates
+
+#### Normalisation
+
+#### Wrangling
+
+### Making steps reproducible
+
+Data extraction, cleaning, 'wrangling', etc
