@@ -37,6 +37,10 @@ Ordinal data is a type of data that can be ordered or ranked. It is a categorica
 
 ## P
 
+### Pseudonymised
+
+Personal data that has been pseudonymised has had all identifying information removed or replaced with a pseudonym. Pseudonymisation is a technique used to protect the privacy of individuals by making it more difficult to identify them from the data. It is often used in research and data analysis to comply with data protection regulations.
+
 ## Q
 
 ## R
