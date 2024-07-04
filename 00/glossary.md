@@ -15,11 +15,19 @@ A blob (Binary Large Object) is a data type used to store large binary data, suc
 
 ## C
 
+### CRISP-DM
+
+CRISP-DM stands for Cross-Industry Standard Process for Data Mining. It is a widely used methodology for data mining projects. The CRISP-DM framework is a cyclical process that consists of six phases: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment. The CRISP-DM framework provides a structured approach to conducting data mining projects and ensures that all aspects of the project are considered. see also [SEMMA](#SEMMA), [PPDAC](#PPDAC) and [KDD](#KDD)
+
 ## D
 
 ### Data Dictonary
 
 A data dictionary is a collection of metadata that describes the structure, content, and properties of a dataset. It provides information about the data elements, their relationships, and their meanings. A data dictionary can help users understand and interpret the data in a dataset, and can be used to ensure consistency and accuracy in data analysis and reporting.
+
+### Data Cube
+
+A data cube is a way of representing multidimensional data. The Scottish Statistics Agency has a good explanation of data cubes [here](https://statistics.gov.scot/help/data_cubes)
 
 ## E
 
@@ -39,6 +47,10 @@ An integer is a whole number that does not have a fractional or decimal part. In
 
 ## K
 
+### KDD
+
+KDD stands for Knowledge Discovery in Databases. It is the process of discovering useful knowledge from large volumes of data. The KDD process involves several steps, including data selection, data preprocessing, data transformation, data mining, and interpretation of the results. KDD is commonly used in data mining and machine learning to extract valuable insights from data.
+
 ## L
 
 ## M
@@ -55,7 +67,7 @@ Ordinal data is a type of data that can be ordered or ranked. It is a categorica
 
 ### PPDAC
 
-PPDAC stands for Problem, Plan, Data, Analysis, and Conclusion. It is a framework commonly used in data science to guide the research process. The PPDAC framework helps to ensure that researchers are following a logical process and considering all aspects of their research. 
+PPDAC stands for Problem, Plan, Data, Analysis, and Conclusion. It is a framework commonly used in data science to guide the research process. The PPDAC framework helps to ensure that researchers are following a logical process and considering all aspects of their research.  See also [CRISP-DM](#CRISP-DM), [SEMMA](#SEMMA) and [KDD](#KDD)
 
 ### Pseudonymised
 
@@ -67,17 +79,26 @@ Personal data that has been pseudonymised has had all identifying information re
 
 ## S
 
-### Structured Data
-
-Structured data is data that is organized in a predefined manner. It is typically organized in rows and columns, and can be easily searched and analysed. It is the opposite of unstructured data, which is data that does not have a predefined data model or is not organized in a predefined manner.
 
 ### Semi-Structured Data
 
 Semi-structured data is data that does not fit neatly into a structured format but has some organizational properties. It is typically organized in a hierarchical manner, with elements that have attributes or properties. Examples of semi-structured data include JSON and XML files. Semi-structured data is commonly found in web APIs and NoSQL databases.
 
+### SEMMA
+
+SEMMA stands for Sample, Explore, Modify, Model, and Assess. It is a data mining methodology developed by SAS Institute that outlines the steps involved in the data mining process. The SEMMA methodology helps to guide the data mining process and ensure that the results are accurate and reliable. see also [CRISP-DM](#CRISP-DM), [PPDAC](#PPDAC) and [KDD](#KDD)
+
+### Structured Data
+
+Structured data is data that is organized in a predefined manner. It is typically organized in rows and columns, and can be easily searched and analysed. It is the opposite of unstructured data, which is data that does not have a predefined data model or is not organized in a predefined manner.
+
 ## T
 
 ## U
+
+### Univarate Data
+
+Univariate data is data that consists of a *single variable or attribute*. It is the simplest form of data and is often used to describe the distribution of a single variable. Univariate data analysis involves examining the distribution of the data, identifying outliers, and summarizing the data using descriptive statistics.
 
 ### Unstructured Data
 
