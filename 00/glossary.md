@@ -29,6 +29,14 @@ A data dictionary is a collection of metadata that describes the structure, cont
 
 A data cube is a way of representing multidimensional data. The Scottish Statistics Agency has a good explanation of data cubes [here](https://statistics.gov.scot/help/data_cubes)
 
+### DDL
+
+DDL stands for Data Definition Language. It is a subset of SQL (Structured Query Language) that is used to define the structure of a database. DDL commands are used to create, modify, and delete database objects such as tables, indexes, and views. Common DDL commands include `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.
+
+### DML
+
+DML stands for Data Manipulation Language. It is a subset of SQL (Structured Query Language) that is used to manipulate data in a database. DML commands are used to insert, update, delete, and retrieve data from database tables. Common DML commands include `INSERT`, `UPDATE`, `DELETE`, and `SELECT`.
+
 ## E
 
 ## F
@@ -76,6 +84,10 @@ Personal data that has been pseudonymised has had all identifying information re
 ## Q
 
 ## R
+
+### Relational Database
+
+A relational database is a type of database that stores data in tables. Each table consists of rows and columns, with each row representing a single record and each column representing a different attribute of the record. Relational databases are commonly used in applications that require complex data relationships and transactions. They are typically accessed using a language called SQL (Structured Query Language).
 
 ## S
 
