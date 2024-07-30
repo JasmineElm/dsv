@@ -1,0 +1,51 @@
+---
+title: "Activity 10.0.4"
+output: html_notebook
+---
+
+# Activity 10.0.4
+
+This notebook shows a simple plotting example. Expand this as you see fit.
+
+```{r}
+# load the ggplot2 library
+library(ggplot2)
+```
+
+
+```{r}
+# The `wt` column is currently set to 1000s of pounds
+# we should convert it to a more obvious unit
+cars <- mtcars
+# set a pound to kilo variable
+lbtokg <- 0.453592
+# multiply the column by our variable to return the value in tonnes
+cars$wt <- cars$wt * lbtokg 
+```
+
+
+```{r}
+# plot the data
+ggplot(data = cars, aes(x = mpg, y = wt)) +
+    geom_point(color = "blue") +
+    # add a trend line, do not show the confidence
+    geom_smooth(method = "lm",
+                se = TRUE,
+                color = "red",
+                alpha = 0,
+                show.legend = FALSE,
+                formula = y ~ x) +
+    # set the labels
+    xlab("Miles per Gallon") +
+    ylab("Weight (Tonnes)") +
+    # remove all visual cruft
+    theme_classic() +
+    # add a title
+    ggtitle("Miles per Gallon vs. Weight") +
+    # and centre it
+    theme(plot.title = element_text(hjust = 0.5))
+```
+
+This plot demonstrates the  correlation between Weight and its miles per gallon performance; the higher the weight, the lower the performance.
+
+

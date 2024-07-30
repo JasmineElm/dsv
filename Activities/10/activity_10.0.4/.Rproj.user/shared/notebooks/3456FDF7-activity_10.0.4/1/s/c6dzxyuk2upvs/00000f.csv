@@ -1,0 +1,7 @@
+"0","# The `wt` column is currently set to 1000s of pounds"
+"0","# we should convert it to a more obvious unit"
+"0","cars <- mtcars"
+"0","# set a pound to kilo variable"
+"0","lbtokg <- 0.453592"
+"0","# multiply the column by our variable to return the value in tonnes"
+"0","cars$wt <- cars$wt * lbtokg "
