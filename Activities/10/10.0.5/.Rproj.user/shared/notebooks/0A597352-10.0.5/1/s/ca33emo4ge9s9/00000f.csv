@@ -1,0 +1,15 @@
+"0","if (file.exists(""judge_ratings.xml"")) {"
+"0","  file.remove(""judge_ratings.xml"")"
+"0","}"
+"0",""
+"0","#query our database, return the result as xml"
+"0","con <- dbConnect(RSQLite::SQLite(), dbname)"
+"2","Warning:"
+"2"," call dbDisconnect() when finished working with a connection
+"
+"0","# synthesize xml output via the sql query"
+"0","query <- ""SELECT '<?xml version=\""1.0\"" encoding=\""UTF-8\""?>' || XMLELEMENT(NAME \""judge_ratings\"", XMLFOREST(judge_name, CONT, INTG, DMNR, DILG, CFMG, DECI, PREP, FAMI, ORAL, WRIT, PHYS)) FROM judge_ratings"""
+"0","# execute the query"
+"0","result <- dbGetQuery(con, query)"
+"2","Error: near """"judge_ratings"""": syntax error
+"

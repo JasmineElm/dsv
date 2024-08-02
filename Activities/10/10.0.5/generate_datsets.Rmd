@@ -1,0 +1,143 @@
+---
+title: "10.0.5"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 10.0.5
+
+Loading data from an external source is a common task.  
+In this section, we will look at some of the methods for loading data from a file.
+
+## Loading from a database
+
+The `DBI` package provides a common interface for connecting to databases. 
+Let's use the `renv::install("DBI")` function to install the package.
+
+
+The `DBI` package provides a common interface for connecting to databases.
+We have a sqlite database in this project: `fake_data.`
+Let's connect to the database.  We'll need to install the `RSQLite` package to connect to the database.
+
+```{r}
+# Function to check and install required packages
+install_and_load <- function(packages) {
+    for (package in packages) {
+        if (!require(package, character.only = TRUE)) {
+            renv::install(package, lock = TRUE)
+        }
+        library(package, character.only = TRUE)
+    }
+}
+
+# List of required packages
+packages <- c("DBI", "RSQLite", "jsonlite", "writexl", "xml2")
+
+# Install and load missing packages
+install_and_load(packages)
+
+# Take a snapshot of the renv environment
+renv::snapshot()
+```
+
+Once installed, we can connect to the database.
+
+```{r}
+# load USJudgeRatings data, convert the rowname  to a column
+df <- USJudgeRatings
+df <- cbind(rownames(df), data.frame(df, row.names=NULL))
+# rename the new column
+colnames(df)[1] <- "judge_name"
+head(df)
+```
+
+```{r}
+if (file.exists("judge_ratings.sqlite")) {
+  file.remove("judge_ratings.sqlite")
+}
+# create a new database
+dbname <- "judge_ratings.sqlite"
+con <- dbConnect(RSQLite::SQLite(), dbname)
+# create a table in the database
+dbWriteTable(con, "judge_ratings", df, overwrite = TRUE)
+# close the connection
+dbDisconnect(con)
+# query our new database
+con <- dbConnect(RSQLite::SQLite(), dbname)
+# query the database
+query <- "SELECT * FROM judge_ratings"
+# execute the query
+result <- dbGetQuery(con, query)
+# print the result
+print(result)
+# close the connection
+dbDisconnect(con)
+```
+
+
+let's convert our data frame to a csv file.
+
+```{r}
+if (file.exists("judge_ratings.csv")) {
+  file.remove("judge_ratings.csv")
+}
+write.csv(df, "judge_ratings.csv", row.names = FALSE)
+```
+and json
+
+```{r}
+if (file.exists("judge_ratings.json")) {
+  file.remove("judge_ratings.json")
+}
+jsonlite::write_json(df, "judge_ratings.json")
+```
+
+and excel
+```{r}
+if (file.exists("judge_ratings.xlsx")) {
+  file.remove("judge_ratings.xlsx")
+}
+writexl::write_xlsx(df, "judge_ratings.xlsx")
+```
+
+
+
+XML
+```{r}
+if (file.exists("judge_ratings.xml")) {
+  file.remove("judge_ratings.xml")
+}
+
+#query our database, return the result as xml
+con <- dbConnect(RSQLite::SQLite(), dbname)
+# synthesize xml output via the sql query
+query <- "SELECT '<judge_name>'||judge_name||'</judge_name> <CONT>'||CONT||'</CONT> <INTG>'||INTG||'</INTG> <DMNR>'||DMNR||'</DMNR> <DILG>'||DILG||'</DILG> <CFMG>'||CFMG||'</CFMG> <DECI>'||DECI||'</DECI> <PREP>'||PREP||'</PREP> <FAMI>'||FAMI||'</FAMI> <ORAL>'||ORAL||'</ORAL> <WRIT>'||WRIT||'</WRIT> <PHYS>'||PHYS||'</PHYS> <RTEN>'||RTEN||'</RTEN> <DECI>'||DECI||'</DECI> <PREP>'||PREP||'</PREP> <FAMI>'||FAMI||'</FAMI> <ORAL>'||ORAL||'</ORAL> <WRIT>'||WRIT||'</WRIT> <PHYS>'||PHYS||'</PHYS> <RTEN>'||RTEN||'</RTEN>' FROM judge_ratings"
+result <- dbGetQuery(con, query)
+# add the xml a root element of judge_ratings
+# use the xml2 package to parse the xml
+xml <- xml2::as_xml_document(paste0("<judge_ratings>", paste(result[,1], collapse = ""), "</judge_ratings>"))
+# write the xml to a file
+xml2::write_xml(xml, "judge_ratings.xml")
+```
+
+RDS
+```{r}
+if (file.exists("judge_ratings.rds")) {
+  file.remove("judge_ratings.rds")
+}
+saveRDS(df, "judge_ratings.rds")
+```
+
+and Rdata
+```{r}
+rdata_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+  file.remove("judge_ratings.Rdata")
+}
+save(df, file = "judge_ratings.Rdata")
+```

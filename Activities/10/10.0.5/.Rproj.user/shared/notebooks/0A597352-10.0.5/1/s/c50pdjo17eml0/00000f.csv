@@ -1,0 +1,6 @@
+"0","# remove any file with the name Judge_Ratings"
+"0","for (file in c(""judge_ratings.csv"", ""judge_ratings.json"", ""judge_ratings.xlsx"", ""judge_ratings.Rdata"", ""judge_ratings.rds"")) {"
+"0","  if (file.exists(file)) {"
+"0","    file.remove(file)"
+"0","  }"
+"0","}"

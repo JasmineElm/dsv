@@ -1,0 +1,6 @@
+"0","# load USJudgeRatings data, convert the rowname  to a column"
+"0","data <- USJudgeRatings"
+"0","setDT(df, keep.rownames = TRUE)[]"
+"2","Error in setDT(df, keep.rownames = TRUE) : 
+  could not find function ""setDT""
+"

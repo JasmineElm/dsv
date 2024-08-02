@@ -1,0 +1,10 @@
+"0","# test the file exists"
+"0","if (file.exists(""judge_ratings.RData"")) {"
+"0","    # load the data"
+"0","    load(""judge_ratings.RData"")"
+"0","    head(judge_ratings)"
+"0","} else {"
+"0","  print(""File not found"")"
+"0","}"
+"2","Error: object 'judge_ratings' not found
+"

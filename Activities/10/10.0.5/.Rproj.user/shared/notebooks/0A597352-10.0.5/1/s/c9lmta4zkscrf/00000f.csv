@@ -1,0 +1,5 @@
+"0","if (!require(""RSQLite""))"
+"0","    renv::install(""RSQLite"", "
+"0","              lock = TRUE)"
+"2","Loading required package: RSQLite
+"

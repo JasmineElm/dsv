@@ -1,0 +1,8 @@
+"0","# query our new database"
+"0","con <- dbConnect(RSQLite::SQLite(), dbname)"
+"0","# query the database"
+"0","query <- ""SELECT * FROM judge_ratings"""
+"0","# execute the query"
+"0","result <- dbGetQuery(con, query)"
+"0","# print the result"
+"0","print(result)"

@@ -1,0 +1,10 @@
+"0","# load our json data"
+"0","json_data <- jsonlite::read_json(""judge_ratings.json"")"
+"0","# convert the json data to xml"
+"0","xml_data <- xml2::as_xml_document(json_data)"
+"1","[1m[33mError[39m in `xml2::as_xml_document()`:[22m
+[33m![39m Root nodes must be of length 1
+Backtrace:
+[90m 1. [39mxml2::as_xml_document(json_data)
+[90m 2. [39m[1m[94mxml2:::as_xml_document.list([39m[22mjson_data[1m[94m)[39m[22m
+"

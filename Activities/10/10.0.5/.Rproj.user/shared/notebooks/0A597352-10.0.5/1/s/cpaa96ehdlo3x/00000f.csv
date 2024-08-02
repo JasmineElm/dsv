@@ -1,0 +1,8 @@
+"0","if (file.exists(""judge_ratings.csv"")) {"
+"0","  file.remove(""judge_ratings.csv"")"
+"0","}"
+"1","[1]"
+"1"," TRUE"
+"1","
+"
+"0","write.csv(df, ""judge_ratings.csv"", row.names = FALSE)"

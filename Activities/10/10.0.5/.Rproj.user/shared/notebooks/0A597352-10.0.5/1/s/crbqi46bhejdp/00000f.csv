@@ -1,0 +1,6 @@
+"0","# load USJudgeRatings data, convert the rowname  to a column"
+"0","df <- USJudgeRatings"
+"0","df <- cbind(rownames(df), data.frame(df, row.names=NULL))"
+"0","# rename the new column"
+"0","colnames(df)[1] <- ""judge_name"""
+"0","head(df)"

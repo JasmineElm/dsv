@@ -1,0 +1,159 @@
+---
+title: "10.0.5"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading data from files
+
+Loading data from an external source is a common task. This notebook
+demonstrates how you can load the following formats:
+
+| Format                     | extension | package               |
+| -------------------------- | --------- | --------------------- |
+| Comma Separated Values     | `.csv`    | (built-in)            |
+| JavaScript Object Notation | `.json`   | `jsonlite`            |
+| Excel                      | `.xlsx`   | `readxl`              |
+| eXtensible Markup Language | `.xml`    | `XML`                 |
+| SQLite                     | `.sqlite` | `RSQLite` (and `DBI`) |
+| rds                        | `.rds`    | (built-in)            |
+| RData                      | `.RData`  | (built-in)            |
+
+We'll start by installing and loading the relevant packages.
+
+```{r}
+# Function to check and install required packages
+install_and_load <- function(packages) {
+    for (package in packages) {
+        if (!require(package, character.only = TRUE)) {
+            install.packages(package, dependencies = TRUE)
+            library(package, character.only = TRUE)
+        } else {
+            library(package, character.only = TRUE)
+        }
+    }
+}
+
+# List of required packages
+packages <- c("jsonlite", "readxl", "XML", "DBI", "RSQLite")
+
+# Install and load missing packages
+install_and_load(packages)
+```
+
+With these loaded, we can now load data from the various formats. For the sake
+of simplicity all of our files are named `judge_ratings.<format>`.
+
+### Loading from a CSV file
+
+```{r}
+# test the file exists
+if (file.exists("judge_ratings.csv")) {
+  # load the data
+  csv_df <- read.csv("judge_ratings.csv")
+  head(csv_df)
+} else {
+  print("File not found")
+}
+```
+
+### Loading from a JSON file
+
+```{r}
+# test the file exists
+if (file.exists("judge_ratings.json")) {
+  # load the data
+  json_df <- fromJSON("judge_ratings.json")
+  head(json_df)
+} else {
+  print("File not found")
+}
+```
+
+### Loading from an Excel file
+
+```{r}
+# test the file exists
+if (file.exists("judge_ratings.xlsx")) {
+  # load the data
+    excel_df <- readxl::read_excel("judge_ratings.xlsx")
+  head(excel_df)
+} else {
+  print("File not found")
+}
+```
+
+### Loading from an XML file
+
+```{r}
+
+
+# test the file exists
+if (file.exists("judge_ratings.xml")) {
+    # load the data using each `judge` node as a list
+    doc<-xmlParse("judge_ratings.xml")
+    # traverse the XML tree and extract the data by the `judge` node
+    xml_df <- xmlToDataFrame(nodes = getNodeSet(doc, "//judge"))
+    # unset the doc
+    rm(doc)
+    head(xml_df)
+    }
+```
+
+### Loading from an SQLite database
+
+```{r}
+# test the file exists
+if (file.exists("judge_ratings.sqlite")) {
+  # connect to the database
+  con <- dbConnect(RSQLite::SQLite(), "judge_ratings.sqlite")
+  # query the database
+  query <- "SELECT * FROM judge_ratings"
+  # execute the query
+  result <- dbGetQuery(con, query)
+  # save the result to a dataframe
+    sql_df <- as.data.frame(result)
+    head(sql_df)
+    # unset the result and query)
+    rm(result, query)
+  # close the connection
+  dbDisconnect(con)
+} else {
+  print("File not found")
+}
+```
+
+### Loading from an RData file
+
+```{r}
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+    # load the data a
+    load("judge_ratings.RData")
+    # what is the object name
+    print(ls())
+    head(rdata_df)
+} else {
+  print("File not found")
+}
+```
+
+### Loading from an RDS file
+
+```{r}
+# RDS files contain the data only, we can load the data directly
+# test the file exists
+if (file.exists("judge_ratings.rds")) {
+  # load the data
+  rds_df <- readRDS("judge_ratings.rds")
+  head(rds_df)
+} else {
+  print("File not found")
+}
+```

@@ -1,0 +1,12 @@
+"0","if (file.exists(""judge_ratings.xml"")) {"
+"0","  file.remove(""judge_ratings.xml"")"
+"0","}"
+"0",""
+"0","#query our database, return the result as xml"
+"0","con <- dbConnect(RSQLite::SQLite(), dbname)"
+"0","query <- ""SELECT * FROM judge_ratings"""
+"0","result <- dbGetQuery(con, query)"
+"0","xml <- xml2::as_xml_document(result)"
+"2","Error in UseMethod(""as_xml_document"") : 
+  no applicable method for 'as_xml_document' applied to an object of class ""data.frame""
+"

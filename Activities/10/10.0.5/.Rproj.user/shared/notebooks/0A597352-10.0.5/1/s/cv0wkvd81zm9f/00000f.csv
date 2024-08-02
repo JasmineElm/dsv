@@ -1,0 +1,4 @@
+"0","# query the mt table"
+"0","con <- dbConnect(RSQLite::SQLite(), ""mtcars.db"")"
+"0","mt <- dbGetQuery(con, ""SELECT * FROM mt"")"
+"0","head(mt)"

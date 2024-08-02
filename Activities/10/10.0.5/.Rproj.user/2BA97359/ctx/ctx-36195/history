@@ -1,0 +1,512 @@
+if (file.exists("judge_ratings.RData")) {
+# load the data assign it to df_rdata
+df_rdata <- load("judge_ratings.RData")
+head(df_rdata)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data assign it to df_rdata
+load("judge_ratings.RData")
+# print the data
+head(df_rdata)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# print the data
+head(df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# print the data
+# head(df)
+} else {
+print("File not found")
+}
+# remove the df
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# print the data
+head(df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(df)
+} else {
+print("File not found")
+}
+knitr::opts_chunk$set(echo = TRUE)
+judge_rating_df <- df
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(df, file = "judge_ratings.Rdata")
+judge_rating_df <- df
+rm df
+judge_rating_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(df, file = "judge_ratings.Rdata")
+df <- judge_rating_df
+rm (judge_rating_df)
+if (file.exists("judge_ratings.rds")) {
+file.remove("judge_ratings.rds")
+}
+saveRDS(df, "judge_ratings.rds")
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+head(df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+head(judge_ratings_df)
+} else {
+print("File not found")
+}
+judge_rating_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(df, file = "judge_ratings.Rdata")
+judge_rating_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+judge_ratings_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# load USJudgeRatings data, convert the rowname  to a column
+df <- USJudgeRatings
+df <- cbind(rownames(df), data.frame(df, row.names=NULL))
+# rename the new column
+colnames(df)[1] <- "judge_name"
+head(df)
+judge_ratings_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# test the file exists
+rm (list=ls())
+head(df)
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+# head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+# head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+# head(judge_ratings_df)
+rm (list=ls())
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+# head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+rm (list=ls())
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+head(judge_ratings_df)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.rds")) {
+# load the data
+rds_df <- readRDS("judge_ratings.rds")
+head(rds_df)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.rds")) {
+# load the data
+rds_df <- readRDS("judge_ratings.rds")
+head(rds_df)
+} else {
+print("File not found")
+}
+rdata_df <- df
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(rdata_df)
+} else {
+print("File not found")
+}
+rdata_df <- df
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(rdata_df)
+} else {
+print("File not found")
+}
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+head(rdata_df)
+} else {
+print("File not found")
+}
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+#head(rdata_df)
+} else {
+print("File not found")
+}
+rdata_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# load USJudgeRatings data, convert the rowname  to a column
+df <- USJudgeRatings
+df <- cbind(rownames(df), data.frame(df, row.names=NULL))
+# rename the new column
+colnames(df)[1] <- "judge_name"
+head(df)
+rdata_df <- df
+rm(df)
+if (file.exists("judge_ratings.Rdata")) {
+file.remove("judge_ratings.Rdata")
+}
+save(judge_ratings_df, file = "judge_ratings.Rdata")
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+#head(rdata_df)
+} else {
+print("File not found")
+}
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(rdata_df)
+} else {
+print("File not found")
+}
+# RDS files contain the data only, we can load the data directly
+# test the file exists
+if (file.exists("judge_ratings.rds")) {
+# load the data
+rds_df <- readRDS("judge_ratings.rds")
+head(rds_df)
+} else {
+print("File not found")
+}
+knitr::opts_chunk$set(echo = TRUE)
+# Function to check and install required packages
+install_and_load <- function(packages) {
+for (package in packages) {
+if (!require(package, character.only = TRUE)) {
+install.packages(package, dependencies = TRUE)
+library(package, character.only = TRUE)
+} else {
+library(package, character.only = TRUE)
+}
+}
+}
+# List of required packages
+packages <- c("jsonlite", "readxl", "XML", "DBI", "RSQLite")
+# Install and load missing packages
+install_and_load(packages)
+# test the file exists
+if (file.exists("judge_ratings.csv")) {
+# load the data
+csv_df <- read.csv("judge_ratings.csv")
+head(csv_df)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.json")) {
+# load the data
+json_df <- fromJSON("judge_ratings.json")
+head(json_df)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.xlsx")) {
+# load the data
+excel_df <- readxl::read_excel("judge_ratings.xlsx")
+head(excel_df)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.xml")) {
+# load the data using each `judge` node as a list
+doc<-xmlParse("judge_ratings.xml")
+# traverse the XML tree and extract the data by the `judge` node
+xml_df <- xmlToDataFrame(nodes = getNodeSet(doc, "//judge"))
+head(xml_df)
+}
+# test the file exists
+if (file.exists("judge_ratings.sqlite")) {
+# connect to the database
+con <- dbConnect(RSQLite::SQLite(), "judge_ratings.sqlite")
+# query the database
+query <- "SELECT * FROM judge_ratings"
+# execute the query
+result <- dbGetQuery(con, query)
+# save the result to a dataframe
+sql_df <- as.data.frame(result)
+head(sql_df)
+# close the connection
+dbDisconnect(con)
+} else {
+print("File not found")
+}
+# Rdata files contain the data and the object name, so we need to load the data
+# and then check the object name
+# test the file exists
+if (file.exists("judge_ratings.RData")) {
+# load the data a
+load("judge_ratings.RData")
+# what is the object name
+print(ls())
+head(rdata_df)
+} else {
+print("File not found")
+}
+# RDS files contain the data only, we can load the data directly
+# test the file exists
+if (file.exists("judge_ratings.rds")) {
+# load the data
+rds_df <- readRDS("judge_ratings.rds")
+head(rds_df)
+} else {
+print("File not found")
+}
+View(result)
+# test the file exists
+if (file.exists("judge_ratings.sqlite")) {
+# connect to the database
+con <- dbConnect(RSQLite::SQLite(), "judge_ratings.sqlite")
+# query the database
+query <- "SELECT * FROM judge_ratings"
+# execute the query
+result <- dbGetQuery(con, query)
+# save the result to a dataframe
+sql_df <- as.data.frame(result)
+head(sql_df)
+# unset the result
+rm(result)
+# close the connection
+dbDisconnect(con)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.sqlite")) {
+# connect to the database
+con <- dbConnect(RSQLite::SQLite(), "judge_ratings.sqlite")
+# query the database
+query <- "SELECT * FROM judge_ratings"
+# execute the query
+result <- dbGetQuery(con, query)
+# save the result to a dataframe
+sql_df <- as.data.frame(result)
+head(sql_df)
+# unset the result and query)
+rm(result = NULL, query = NULL)
+# close the connection
+dbDisconnect(con)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.sqlite")) {
+# connect to the database
+con <- dbConnect(RSQLite::SQLite(), "judge_ratings.sqlite")
+# query the database
+query <- "SELECT * FROM judge_ratings"
+# execute the query
+result <- dbGetQuery(con, query)
+# save the result to a dataframe
+sql_df <- as.data.frame(result)
+head(sql_df)
+# unset the result and query)
+rm(result, query)
+# close the connection
+dbDisconnect(con)
+} else {
+print("File not found")
+}
+# test the file exists
+if (file.exists("judge_ratings.xml")) {
+# load the data using each `judge` node as a list
+doc<-xmlParse("judge_ratings.xml")
+# traverse the XML tree and extract the data by the `judge` node
+xml_df <- xmlToDataFrame(nodes = getNodeSet(doc, "//judge"))
+# unset the doc
+rm(doc)
+head(xml_df)
+}

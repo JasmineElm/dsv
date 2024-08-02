@@ -1,0 +1,6 @@
+"0","con <- dbConnect(RSQLite::SQLite(), dbname)"
+"0","# create a table in the database"
+"0","dbWriteTable(con, tblname, tbl_data, overwrite = TRUE)"
+"0","# close the connection"
+"0","dbDisconnect(con)"
+"0",""

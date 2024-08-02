@@ -1,0 +1,6 @@
+"0","# convert the data frame to xml"
+"0","df <- as.data.frame(df)"
+"0","xml2::write_xml(df, ""judge_ratings.xml"")"
+"2","Error in UseMethod(""write_xml"") : 
+  no applicable method for 'write_xml' applied to an object of class ""data.frame""
+"

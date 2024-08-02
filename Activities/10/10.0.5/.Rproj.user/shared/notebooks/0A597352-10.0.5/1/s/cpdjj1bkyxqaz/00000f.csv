@@ -1,0 +1,10 @@
+"0","# test the file exists"
+"0","if (file.exists(""judge_ratings.xlsx"")) {"
+"0","  # load the data"
+"0","  df <- readxl::read_xlsx(""judge_ratings.xlsx"")"
+"0","  head(df)"
+"0","} else {"
+"0","  print(""File not found"")"
+"0","}"
+"2","Error in loadNamespace(x) : there is no package called ‘readxl’
+"

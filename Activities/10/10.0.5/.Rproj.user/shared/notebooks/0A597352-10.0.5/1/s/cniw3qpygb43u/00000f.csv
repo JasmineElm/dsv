@@ -1,0 +1,5 @@
+"0","# convert the data frame to xml"
+"0","xml <- xml2::as_xml_document(df)"
+"2","Error in UseMethod(""as_xml_document"") : 
+  no applicable method for 'as_xml_document' applied to an object of class ""data.frame""
+"

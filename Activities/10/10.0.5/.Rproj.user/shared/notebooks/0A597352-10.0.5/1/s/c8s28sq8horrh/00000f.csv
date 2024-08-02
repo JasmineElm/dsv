@@ -1,0 +1,5 @@
+"0","# if DBI is not installed, install it"
+"0","if (!require(""DBI""))"
+"0","    renv::install(""DBI"", "
+"0","              lock = TRUE)"
+"0","library(""DBI"")"

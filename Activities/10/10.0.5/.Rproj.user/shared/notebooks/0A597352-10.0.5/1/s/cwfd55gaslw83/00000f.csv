@@ -1,0 +1,11 @@
+"0","if (file.exists(""judge_ratings.xml"")) {"
+"0","  file.remove(""judge_ratings.xml"")"
+"0","}"
+"0",""
+"0","#query our database, return the result as xml"
+"0","con <- dbConnect(RSQLite::SQLite(), dbname)"
+"0","# synthesize xml output via the sql query"
+"0","query <- ""SELECT '<judge_name>'||judge_name||'</judge_name><CONT><CONT>'||CONT||'</CONT><INTG><INTG>'||INTG||'</INTG><DMNR><DMNR>'||DMNR||'</DMNR><DILG><DILG>'||DILG||'</DILG><CFMG><CFMG>'||CFMG||'</CFMG><DECI><DECI>'||DECI||'</DECI><PREP><PREP>'||PREP||'</PREP><FAMI><FAMI>'||FAMI||'</FAMI><ORAL><ORAL>'||ORAL||'</ORAL><WRIT><WRIT>'||WRIT||'</WRIT><PHYS><PHYS>'||PHYS||'</PHYS><RTEN><RTEN>'||RTEN||'</RTEN><ETHC><ETHC>'||ETHC||'</ETHC><MGMT><MGMT>'||MGMT||'</MGMT><COMM><COMM>'||COMM||'</COMM><DECI<DECI>'||DECI||'</DECI><PREP><PREP>'||PREP||'</PREP><FAMI><FAMI>'||FAMI||'</FAMI><ORAL><ORAL>'||ORAL||'</ORAL><WRIT><WRIT>'||WRIT||'</WRIT><PHYS><PHYS>'||PHYS||'</PHYS><RTEN><RTEN>'||RTEN||'</RTEN><ETHC><ETHC>'||ETHC||'</ETHC><MGMT><MGMT>'||MGMT||'</MGMT><COMM><COMM>'||COMM||'</COMM>' FROM judge_ratings"""
+"0","result <- dbGetQuery(con, query)"
+"2","Error: no such column: ETHC
+"

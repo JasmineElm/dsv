@@ -1,0 +1,1 @@
+{"frames":[{"func":"xml2::as_xml_document(result)","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error in UseMethod(\"as_xml_document\") : \n  no applicable method for 'as_xml_document' applied to an object of class \"data.frame\"\n"}

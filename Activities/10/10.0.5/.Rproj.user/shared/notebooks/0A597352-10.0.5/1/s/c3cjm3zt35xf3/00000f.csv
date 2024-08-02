@@ -1,0 +1,11 @@
+"0","# connect to the database"
+"0","con <- dbConnect(RSQLite::SQLite(), ""fake_data.sqlite"")"
+"0","# query the database schema"
+"0","dbListTables(con)"
+"1","character(0)
+"
+"0","# print the list of tables"
+"0",""
+"0","# and disconnect once we're done"
+"0",""
+"0","dbDisconnect(con)"

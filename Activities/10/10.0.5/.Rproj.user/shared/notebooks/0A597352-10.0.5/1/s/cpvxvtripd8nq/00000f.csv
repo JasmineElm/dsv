@@ -1,0 +1,17 @@
+"0","# test the file exists"
+"0","# remove the df object if it exists"
+"0","if (exists(""df"")) {"
+"0","  rm(df)"
+"0","}"
+"0","if (file.exists(""judge_ratings.RData"")) {"
+"0","    # load the data"
+"0","    load(""judge_ratings.RData"", verbose = TRUE)"
+"0","    head(df)"
+"0","} else {"
+"0","  print(""File not found"")"
+"0","}"
+"1","Loading objects:
+"
+"1","  "
+"1","df
+"
