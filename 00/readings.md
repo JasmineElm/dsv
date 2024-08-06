@@ -16,3 +16,4 @@ and understand data science, statistics and machine learning. John Wiley & Sons.
 | A Hands-On Introduction to Data Science | 2       | 2.0     |
 | Storytelling with Data                  | 1       | 5.0     |
 | A hands-on introduction to data science | 6       | 10.0     |
+| Becoming a Data Head                    | 13      | 6.1     |
