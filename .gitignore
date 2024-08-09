@@ -1,6 +1,8 @@
 .DS_Store
 *.docx
 notes
-*/.Rproj.user/*
+*.Rproj*
+*.RData
+.Rhistory
 renv/*
 .venv

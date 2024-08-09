@@ -1,0 +1,48 @@
+---
+title: "5.1.1"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## T-tests
+
+This notebook demonstrates the use of t-tests in R.
+
+```{r}
+# Load the data.csv file
+data <- read.csv("data.csv")
+# take the mean of `value2`
+value2_mean <- mean(data$value2)
+```
+
+## One-Sample T-Test
+
+The one-sample t-test is used to determine whether the mean of a single sample is significantly different from a known or hypothesized population mean.
+
+
+```{r}
+# Perform a one-sample t-test using the mean of `value2` against `value 1`
+t.test(data$value1, mu = value2_mean)
+```
+
+## Independent T-Test
+
+The independent t-test is used to determine whether the means of two independent groups are significantly different from one another.
+
+```{r}
+# Perform an independent t-test between `value1` and `value2`
+t.test(data$value1, data$value2)
+```
+
+## Paired T-Test
+
+The paired t-test is used to determine whether the means of two paired samples are significantly different from one another.
+
+```{r}
+# Perform a paired t-test between `value1` and `value2`
+t.test(data$value1, data$value2, paired = TRUE)
+```
