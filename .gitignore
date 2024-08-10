@@ -6,3 +6,4 @@ notes
 .Rhistory
 renv/*
 .venv
+.Rproj.user
