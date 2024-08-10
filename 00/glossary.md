@@ -1,6 +1,7 @@
 # Glossary
+This glossary contains definitions of key terms and concepts related to data science, data analysis, and data management. It is intended to help readers understand and interpret technical terms and jargon commonly used in the field of data science. The glossary is organized alphabetically by term, with each term followed by a brief definition and explanation.
 
-
+<!-- TODO: complete glossary once first draft complete -->
 ## A
 
 ## B

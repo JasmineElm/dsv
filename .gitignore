@@ -7,3 +7,4 @@ notes
 renv/*
 .venv
 .Rproj.user
+.vscode
