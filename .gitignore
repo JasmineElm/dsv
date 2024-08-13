@@ -1,6 +1,7 @@
 .DS_Store
 *.docx
 notes
+node_modules
 *.Rproj*
 *.RData
 .Rhistory
@@ -8,3 +9,7 @@ renv/*
 .venv
 .Rproj.user
 .vscode
+dsv.code.workspace
+Raw_Assets
+package*.json
+
