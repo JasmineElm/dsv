@@ -1,10 +1,8 @@
 | File                                 | TODO                                                     |
 | ------------------------------------ | -------------------------------------------------------- |
 | [./00/glossary.md](./00/glossary.md) | complete glossary once first draft complete              |
-| [./01/1.0.md](./01/1.0.md)           | Brief overview of the topics ~ 200 words                 |
 | [./01/1.2.md](./01/1.2.md)           | add more activities                                      |
-| [./01/1.2.md](./01/1.2.md)           | find useful texts on the subject of data literacy        |
-| [./01/1.2.md](./01/1.2.md)           | ~700 words                                               |
+| [./01/1.2.md](./01/1.2.md)           | ~400 words                                               |
 | [./01/1.5.md](./01/1.5.md)           | More content here?                                       |
 | [./02/2.1.md](./02/2.1.md)           | more content here linking the concepts back to the topic |
 | [./02/2.3.md](./02/2.3.md)           | Add more activities                                      |
@@ -13,10 +11,10 @@
 | [./03/3.1.md](./03/3.1.md)           | Split the theory and practicals into separate sections   |
 | [./03/3.2.md](./03/3.2.md)           | one-shot approach using `requests` and `json` in Python? |
 | [./03/3.2.md](./03/3.2.md)           | process the output of the API in R/Python                |
+| [./03/3.3.md](./03/3.3.md)           | add discussion                                           |
 | [./03/3.3.md](./03/3.3.md)           | add more activities                                      |
 | [./03/3.3.md](./03/3.3.md)           | add more content to both sections                        |
-| [./03/3.3.md](./03/3.3.md)           | create a snowflake schema diagram                        |
-| [./03/3.3.md](./03/3.3.md)           | create a star schema diagram                             |
+| [./03/3.3.md](./03/3.3.md)           | complete section                                         |
 | [./03/3.4.md](./03/3.4.md)           | complete this section                                    |
 | [./03/3.4.md](./03/3.4.md)           | more activities                                          |
 | [./03/3.5.md](./03/3.5.md)           | Add 5 activities                                         |
