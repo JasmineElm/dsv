@@ -16,6 +16,7 @@ motivator to keep going..._
 
 _Anticipated word count: 50,000_
 
-| Date       | Words |
-| ---------- | ----- |
-| 2024-08-13 | 37328 |
+| Date       | Words | Tasks remaining |
+| ---------- | ----- | --------------- |
+| 2024-08-13 | 37328 | 87              |
+| 2024-08-14 | 40467 | 85              |

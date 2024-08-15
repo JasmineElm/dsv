@@ -20,6 +20,12 @@ _get_wc() {
 _todo_headers() {
     printf "\n| File | TODO |\n|------|------|\n"
 }
+
+_todo_count() {
+    # prints the number of TODOs in the markdown files
+    grep -o "TODO:" **/*.md | wc -l
+}
+
 _list_todos() {
     # prints all the TODOs in the markdown files
     # strips <!-- TODO: and --> from the output
@@ -28,7 +34,7 @@ _list_todos() {
     find . -name "*.md" | while read -r file; do
         grep -o "<!-- TODO:.*-->" "$file" | sed -e 's/<!-- TODO: //g' -e 's/ -->//g' |
             while read -r line; do
-                echo "|" "$file" "|" "$line" "|"
+                echo "| [""$file""](""$file"") |" "$line" "|"
             done
     done | sort
 }
@@ -38,13 +44,13 @@ _git_commit() {
     git commit -m "Auto commit: $_TODAY"
     git push
 }
+
 ###  MAIN           ###########################################################
 _WC=$(_get_wc)
+_TODO=$(_todo_count)
 
-echo "|" "$_TODAY" "|" "$_WC" "|" >>$_OUTFILE
+echo "|" "$_TODAY" "|" "$_WC" "|" "$_TODO" "|" >>$_OUTFILE
 _list_todos >$_TODOS
-npx prettier --write **/*.md
-# local files also
-npx prettier --write *.md
+find . -name "*.md" -exec npx prettier --write {} \;
 sleep 2
 _git_commit
