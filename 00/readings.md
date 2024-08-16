@@ -8,6 +8,11 @@ Press.
 Gutman, A.J. and Goldmeier, J (2021). Becoming a Data Head: How to think, speak
 and understand data science, statistics and machine learning. John Wiley & Sons.
 
+Knaflic, C.N. (2015). Storytelling with Data: A Data Visualization Guide for
+Business Professionals. John Wiley & Sons.
+
+<!--TODO: get chapter list for each -->
+
 | Book                                    | Chapter | Section |
 | --------------------------------------- | ------- | ------- |
 | Becoming a Data Head                    | 1       | 1.3     |
