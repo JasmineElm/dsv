@@ -51,6 +51,6 @@ _TODO=$(_todo_count)
 
 echo "|" "$_TODAY" "|" "$_WC" "|" "$_TODO" "|" >>$_OUTFILE
 _list_todos >$_TODOS
-find . -name "*.md" -exec npx prettier --write {} \;
+find . -name "*.md" -exec npx prettier --write {} +;
 sleep 2
 _git_commit
