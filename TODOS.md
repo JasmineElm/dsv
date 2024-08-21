@@ -38,7 +38,7 @@
 | [./06/6.4.md](./06/6.4.md)           | write ~500 words                                         |
 | [./07/7.1.md](./07/7.1.md)           | add 4 activities                                         |
 | [./07/7.1.md](./07/7.1.md)           | mention infographics, call back to literacy              |
-| [./07/7.2.md](./07/7.2.md)           | add 4 activities                                         |
+| [./07/7.2.md](./07/7.2.md)           | add 2 activities                                         |
 | [./07/7.2.md](./07/7.2.md)           | write ~1000 words                                        |
 | [./07/7.3.md](./07/7.3.md)           | add 5 activities                                         |
 | [./07/7.3.md](./07/7.3.md)           | write ~1000 words                                        |
@@ -64,14 +64,11 @@
 | [./09/9.3.md](./09/9.3.md)           | add 5 activities                                         |
 | [./09/9.3.md](./09/9.3.md)           | decide topic                                             |
 | [./09/9.3.md](./09/9.3.md)           | write ~1000 words                                        |
-| [./09/9.4.md](./09/9.4.md)           | add 5 activities                                         |
-| [./09/9.4.md](./09/9.4.md)           | decide topic                                             |
 | [./09/9.4.md](./09/9.4.md)           | write ~1000 words                                        |
 | [./10/10.0.1.md](./10/10.0.1.md)     | add 4 activities                                         |
 | [./10/10.0.md](./10/10.0.md)         | Add second section: using R                              |
 | [./10/10.1.md](./10/10.1.md)         | add second section: Using Python for Data Science        |
 | [./10/10.1.md](./10/10.1.md)         | finish this tutorial...                                  |
-| [./10/10.1.md](./10/10.1.md)         | reading activity based on set text                       |
 | [./10/10.2.md](./10/10.2.md)         | add 5 activities                                         |
 | [./10/10.2.md](./10/10.2.md)         | write ~1000 words                                        |
 | [./10/10.3.md](./10/10.3.md)         | add 5 activities                                         |

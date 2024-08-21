@@ -83,16 +83,19 @@ The following set-texts are required reading for this course:
 
 This course refers to the following sections of the set-texts:
 
-| Book                                    | Chapter    | Section   |
-| --------------------------------------- | ---------- | --------- |
-| A Hands-On Introduction to Data Science | Appendix G | 1.0       |
-| Becoming a Data Head                    | 14         | 1.2       |
-| Becoming a Data Head                    | 1          | 1.3       |
-| A Hands-On Introduction to Data Science | 2          | 2.0       |
-| Becoming a Data Head                    | 4          | 2.1       |
-| A Hands-On Introduction to Data Science | 7          | 3.1       |
-| Storytelling with Data                  | 1          | 5.0       |
-| Becoming a Data Head                    | 13         | 6.1       |
-| Becoming a Data Head                    | 5          | 6.2       |
-| A Hands-On Introduction to Data Science | Appendix H | ?? ethics |
-| A hands-on introduction to data science | 6          | 10.0      |
+| Book                                    | Chapter    | Section               |
+| --------------------------------------- | ---------- | --------------------- |
+| A Hands-On Introduction to Data Science | Appendix G | [1.0](../01/1.0.md)   |
+| Becoming a Data Head                    | 14         | [1.2](../01/1.2.md)   |
+| Becoming a Data Head                    | 1          | [1.3](../01/1.3.md)   |
+| A Hands-On Introduction to Data Science | 2          | [2.0](../02/2.0.md)   |
+| Becoming a Data Head                    | 4          | [2.1](../02/2.1.md)   |
+| A Hands-On Introduction to Data Science | Appendix E | [2.1](../02/2.1.md)   |
+| A Hands-On Introduction to Data Science | 7          | [3.1](../03/3.1.md)   |
+| A Hands-On Introduction to Data Science | 3          | [4.0](../04/4.0.md)   |
+| Storytelling with Data                  | 1          | [5.0](../05/5.0.md)   |
+| Becoming a Data Head                    | 13         | [6.1](../06/6.1.md)   |
+| A Hands-On Introduction to Data Science | Appendix H | [6.1](../06/6.1.md)   |
+| Becoming a Data Head                    | 5          | [6.2](../06/6.2.md)   |
+| Storytelling with Data                  | 3          | [7.2](../07/7.2.md)   |
+| A hands-on introduction to data science | Appendix D | [10.0](../10/10.0.md) |
