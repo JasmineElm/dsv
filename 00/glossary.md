@@ -264,6 +264,14 @@ decisions and drawing meaningful insights from data.
 
 ## R
 
+### RDBMS
+
+RDBMS stands for Relational Database Management System. It is a type of database
+management system that stores data in a structured format, using rows and
+columns to represent data entities and attributes. RDBMSs are commonly used in
+applications that require complex data relationships and transactions. They are
+typically accessed using a language called SQL (Structured Query Language).
+
 ### Relational Database
 
 A relational database is a type of database that stores data in tables. Each

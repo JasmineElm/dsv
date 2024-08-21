@@ -6,7 +6,6 @@ This is a placeholder for course materials I am creating for a Data Science and
 Visualisation module. This should be treated as _very_ alpha quality, and is
 currently in _first draft_ status.
 
-- The current list of outstanding tasks is in [TODOS.md](TODOS.md).
 - You probably want to jump straight into [Week 1](01/1.0.md).
 
 ---
@@ -25,3 +24,4 @@ _Anticipated word count: 50,000_
 | 2024-08-17 | 41487 | 86              |
 | 2024-08-18 | 41487 | 86              |
 | 2024-08-19 | 41487 | 86              |
+| 2024-08-20 | 42934 | [80](TODOS.md)  |

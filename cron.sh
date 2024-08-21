@@ -22,8 +22,11 @@ _todo_headers() {
 }
 
 _todo_count() {
-    # prints the number of TODOs in the markdown files
-    grep -o "TODO:" **/*.md | wc -l
+    # prints the number of TODOs in the markdown files in a handy-danndy
+    # link to the TODOS.md file
+    shopt -s globstar
+    echo "["$(grep -o "TODO:" **/*.md | wc -l)"](TODOS.md)"
+    shopt -u globstar
 }
 
 _list_todos() {
