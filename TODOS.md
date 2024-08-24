@@ -4,7 +4,6 @@
 | [./01/1.2.md](./01/1.2.md)           | link literacy back to people and personalities           |
 | [./01/1.5.md](./01/1.5.md)           | More content here?                                       |
 | [./02/2.1.md](./02/2.1.md)           | more content here linking the concepts back to the topic |
-| [./02/2.3.md](./02/2.3.md)           | Add more activities                                      |
 | [./02/2.4.md](./02/2.4.md)           | Add more content                                         |
 | [./03/3.0.md](./03/3.0.md)           | ~200 words                                               |
 | [./03/3.2.md](./03/3.2.md)           | one-shot approach using `requests` and `json` in Python? |
