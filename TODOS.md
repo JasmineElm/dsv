@@ -16,8 +16,8 @@
 | [./03/3.5.md](./03/3.5.md)       | Add 5 activities                                         |
 | [./03/3.5.md](./03/3.5.md)       | write ~1000 words on data cleansing                      |
 | [./03/3.6.md](./03/3.6.md)       | Write conclusion                                         |
-| [./04/4.1.md](./04/4.1.md)       | add 4 activities                                         |
-| [./04/4.1.md](./04/4.1.md)       | write ~500 words                                         |
+| [./04/4.1.md](./04/4.1.md)       | add 2 activities                                         |
+| [./04/4.1.md](./04/4.1.md)       | either wrong data type or out of bounds para             |
 | [./04/4.2.md](./04/4.2.md)       | add 5 activities                                         |
 | [./04/4.2.md](./04/4.2.md)       | write ~1000 words                                        |
 | [./04/4.3.md](./04/4.3.md)       | add 5 activities                                         |
