@@ -1,6 +1,5 @@
 | File                             | TODO                                                           |
 | -------------------------------- | -------------------------------------------------------------- |
-| [./01/1.1.md](./01/1.1.md)       | facets of these attributes                                     |
 | [./01/1.2.md](./01/1.2.md)       | link literacy back to people and personalities                 |
 | [./02/2.1.md](./02/2.1.md)       | more content here linking the concepts back to the topic       |
 | [./03/3.2.md](./03/3.2.md)       | one-shot approach using `requests` and `json` in Python?       |
@@ -46,7 +45,6 @@
 | [./07/7.4.md](./07/7.4.md)       | write ~1000 words                                              |
 | [./07/7.5.md](./07/7.5.md)       | write ~500 words                                               |
 | [./08/8.0.md](./08/8.0.md)       | finish this para...                                            |
-| [./08/8.0.md](./08/8.0.md)       | paragraph about dialogue                                       |
 | [./08/8.1.md](./08/8.1.md)       | add 4 activities                                               |
 | [./08/8.1.md](./08/8.1.md)       | write ~700 words                                               |
 | [./08/8.2.md](./08/8.2.md)       | add 5 activities                                               |
