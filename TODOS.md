@@ -1,20 +1,14 @@
 | File                             | TODO                                                           |
 | -------------------------------- | -------------------------------------------------------------- |
-| [./01/1.2.md](./01/1.2.md)       | link literacy back to people and personalities                 |
-| [./02/2.1.md](./02/2.1.md)       | more content here linking the concepts back to the topic       |
 | [./03/3.2.md](./03/3.2.md)       | one-shot approach using `requests` and `json` in Python?       |
 | [./03/3.2.md](./03/3.2.md)       | process the output of the API in R/Python                      |
-| [./03/3.3.md](./03/3.3.md)       | add discussion                                                 |
 | [./03/3.3.md](./03/3.3.md)       | add more activities                                            |
-| [./03/3.3.md](./03/3.3.md)       | add more content to both sections                              |
-| [./03/3.3.md](./03/3.3.md)       | complete section                                               |
 | [./03/3.4.md](./03/3.4.md)       | complete this section                                          |
 | [./03/3.4.md](./03/3.4.md)       | more activities                                                |
 | [./03/3.5.md](./03/3.5.md)       | Add 5 activities                                               |
 | [./03/3.5.md](./03/3.5.md)       | write ~1000                                                    |
 | [./03/3.6.md](./03/3.6.md)       | Write conclusion                                               |
 | [./04/4.1.md](./04/4.1.md)       | add 2 activities                                               |
-| [./04/4.1.md](./04/4.1.md)       | either wrong data type or out of bounds para                   |
 | [./04/4.2.md](./04/4.2.md)       | 4 activities                                                   |
 | [./04/4.2.md](./04/4.2.md)       | complete section                                               |
 | [./04/4.3.md](./04/4.3.md)       | add 4 activities                                               |
@@ -25,7 +19,7 @@
 | [./05/5.3.md](./05/5.3.md)       | write ~1000 words                                              |
 | [./05/5.4.md](./05/5.4.md)       | write ~500 words                                               |
 | [./06/6.2.md](./06/6.2.md)       | add 3 activities                                               |
-| [./06/6.2.md](./06/6.2.md)       | write ~500 words                                               |
+| [./06/6.2.md](./06/6.2.md)       | write ~700 words                                               |
 | [./06/6.3.md](./06/6.3.md)       | add 5 activities                                               |
 | [./06/6.3.md](./06/6.3.md)       | write ~1000 words                                              |
 | [./06/6.4.md](./06/6.4.md)       | write ~500 words                                               |
