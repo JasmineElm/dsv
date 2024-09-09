@@ -34,7 +34,7 @@
 | [./07/7.4.md](./07/7.4.md)   | truth is discussed in Cairo's Truthful art Chapter 3           |
 | [./07/7.4.md](./07/7.4.md)   | write ~1000 words                                              |
 | [./07/7.5.md](./07/7.5.md)   | write ~500 words                                               |
-| [./08/8.0.md](./08/8.0.md)   | finish this para...                                            |
+| [./08/8.0.md](./08/8.0.md)   | add examples of Data Journalism                                |
 | [./08/8.1.md](./08/8.1.md)   | add 4 activities                                               |
 | [./08/8.1.md](./08/8.1.md)   | write ~700 words                                               |
 | [./08/8.2.md](./08/8.2.md)   | add 5 activities                                               |
